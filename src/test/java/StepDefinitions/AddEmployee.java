@@ -15,10 +15,12 @@ import java.time.Duration;
 
 public class AddEmployee extends CommonMethods {
 
+
     AddEmployeePage addEmployee=new AddEmployeePage();
 
     @When("user click on PIM option")
     public void user_click_on_pim_option() throws InterruptedException {
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         if (driver.findElements(By.xpath("//span[text()='PIM']")).isEmpty()) {
             wait.until(ExpectedConditions.elementToBeClickable(addEmployee.toggleButton)).click();

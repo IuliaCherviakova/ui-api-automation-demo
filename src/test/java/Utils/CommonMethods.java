@@ -3,6 +3,7 @@ package Utils;
 import StepDefinitions.PageInitializer;
 import io.cucumber.core.backend.StepDefinition;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -49,9 +50,18 @@ public class CommonMethods extends PageInitializer {
         driver.get(ConfigReader.getPropertyValue("url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.WAIT_TIME));
         initializePageObjects();
+
+        //to configure the File and pattern of it
+        DOMConfigurator.configure("log4j.xml");
+        Log.startTestCase("This is the begining of my test case");
+        Log.info("My test case is executing");
+        Log.warning("My test case might have some issues");
     }
 
     public static void closeBrowser(){
+
+        Log.info("This test case is about to be completed");
+        Log.endTestCase("This test case is finished");
         driver.close();
     }
     public static void sendText(WebElement element,String text){

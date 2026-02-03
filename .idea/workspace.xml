@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36a11f7b-45ce-4fc6-9b8d-75a47aaf9e29" name="Changes" comment="" />
+    <list default="true" id="36a11f7b-45ce-4fc6-9b8d-75a47aaf9e29" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/HardCodedExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/APIWorkflowSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/GenerateTokenSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/APIRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/FailedRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/APIConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/APIPayloadConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/APIWorkflow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -44,36 +61,64 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.SmokeRunner">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.Test" />
+  <component name="RunManager" selected="JUnit.APIRunner">
+    <configuration name="APIRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_UI_API_testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.*" />
+          <option name="PATTERN" value="TestRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.APIRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search Employee by id" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/EmployeeSearch.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="FailedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_UI_API_testing" />
-      <option name="NAME_FILTER" value="^Search Employee by id$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search Employee by id$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search Employee by id" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="TestRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.FailedRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HardCodedExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_UI_API_testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API" />
+      <option name="MAIN_CLASS_NAME" value="API.HardCodedExamples" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HardCodedExamples.getEmployeeContactDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_UI_API_testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API" />
+      <option name="MAIN_CLASS_NAME" value="API.HardCodedExamples" />
+      <option name="METHOD_NAME" value="getEmployeeContactDetails" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,9 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.APIRunner" />
+        <item itemvalue="JUnit.HardCodedExamples" />
+        <item itemvalue="JUnit.HardCodedExamples.getEmployeeContactDetails" />
         <item itemvalue="JUnit.SmokeRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Search Employee by id" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.FailedRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +164,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java</url>
-          <line>15</line>
+          <line>16</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
